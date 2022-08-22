@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index</title>
+    <style>
+
+        *{
+        box-sizing: border-box;
+        font-family:  Sans-serif, Helvetica, Arial;
+        padding: 0;
+        margin: 0;
+    }
+    .blur{
+        position: fixed;
+        margin: -10px;
+        background-image: url("bck2.png");
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        -ms-filter: blur(8px);
+        z-index: 9999999px;
+        opacity: .9;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 105%;
+        width: 102%;
+    }
+    .form{
+	position: fixed;
+	padding: 200px;
+	height: 80vh;
+	text-align: center;
+	top: 52%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+    }
+    form>div{
+	width: 100%;
+	margin: -50px auto;
+	/*margin: 5px;*/
+    text-align: center;
+    }
+    .user, .pass{
+        margin-bottom: 5px;
+        width: 300px;
+        height: 40px;
+        text-align: center;
+        margin-bottom: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1em;
+        border-bottom: 2px solid;
+    }
+
+    .user:focus, .pass:focus{
+        background-color: black;
+        color: white;
+        line-height: 1.4;
+        border-bottom: 1px solid crimson;
+        border-right: 1px solid crimson; 
+    }
+    #forgot{
+        font-size: .9em;
+        margin-top: 45px;
+        margin-bottom: 40px;
+        margin-left: -175px;
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
+    }
+    .btn{
+    width: 260px;
+    height: 50px;
+	/* margin-top: -40px; */
+	background: #fff;
+    font-weight: bold;
+	font-family: Helvetica;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+	cursor: pointer;
+	line-height: 1.2;
+    border-radius: 20px;
+    font-size: 1.3em;
+    color: blueviolet;
+    }
+
+    .btn:hover{
+        background: #15d42f;
+        color: #fff;
+        border: 2px #c9ee63cc groove;
+    }
+
+    .btn:focus{
+        border: 2px #A5D721 groove;
+    }
+    #register{
+        font-size: .95em;
+        color: #fff;
+        margin-top: 50px;
+        font-weight: bold;
+    }
+    #register:hover{
+        color: rgba(141, 231, 238, 0.63);
+    }
+    .facebook, .google{
+        position: absolute;
+        height: 10px;
+        padding: 25px;
+        border: 1px solid #fff;
+        width: 10vw;
+        margin-top: 10px;
+    }
+    .facebook{
+        background-color: blue;
+        top: 0;
+        left: 50%;
+        transform: translate(76%, 0%);
+        /* margin-top: 0px; */
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    #icon{
+        position: absolute;
+        top: 15%;
+        left: 8%;
+    }
+   .fb>i{
+        color: #fff;
+   }
+   .fb>i span{
+        position: absolute;
+        font-size: .55em;
+        left: 120%;
+        top: 28%;
+   }
+   .google{
+        background-color: rgb(248, 58, 10);
+        top: 0;
+        left: 50%;
+        /* margin-top: -150px; */
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+   }
+   .facebook:hover{
+    box-shadow: 0 1px 5px 1px coral;
+   }
+   .google:hover{
+    box-shadow: 0 1px 5px 1px rgb(69, 69, 235);
+   }
+   /* .signup{
+       position: relative;
+   } */
+   @media (max-width: 575px){
+    .blur{
+           background: url("bck3.png") no-repeat center;
+           background-size: cover;
+           height: 105%;
+            width: 102%;
+       }
+       .facebook, .google{
+           width: 130px;
+       }
+       .facebook{
+           left: 17.5%;
+           /* transform: translate(70%, 0%); */
+       }
+   }
+   @media (min-width: 576px) and (max-width: 767px){
+       .blur{
+            background: url("bck3.png") no-repeat center;
+           background-size: cover;
+           height: 105%;
+            width: 102%;
+       }
+    .facebook, .google{
+           width: 140px;
+       }
+       .facebook{
+           left: 16%;
+       }
+   }
+   @media (min-width: 768px) and (max-width: 991px){
+    .facebook, .google{
+           width: 140px;
+       }
+       .facebook{
+           left: 15%;
+       }
+   }
+   @media (min-width: 992px) and (max-width: 1199px){
+    .facebook, .google{
+           width: 140px;
+       }
+       .facebook{
+           left: 15%;
+       }
+   }
+   @media (min-width: 1200px) and (max-width: 1310px){
+    .facebook, .google{
+           width: 140px;
+       }
+       .facebook{
+           left: 16%;
+       }
+   }
+   @media (min-width: 1400px){
+    .facebook, .google{
+           width: 140px;
+       }
+       .facebook{
+           left: 15%;
+       }
+   }
+    </style>
+    	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://kit.fontawesome.com/d2d33bd796.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div class="blur"></div>
+    <div class="form">
+    <form action="#">
+        <div class="signup">
+            <div class="facebook">
+            <a class="fb" href="#"><i id="icon" class="fa fa-facebook-official fa-2x" aria-hidden = "true"><span>Facebook</span></i></a></div>
+            <div class="google">
+                <a class="fb" href="#"><i id="icon" class="fa fa-google plus-official fa-2x" aria-hidden = "true"><span>Google&plus;</span></i></a></div>
+        </div>
+    <div>
+        <input type="email" class="user" placeholder="E-mail">
+        <input type="password" class="pass" placeholder="Password">
+    </div>
+    <a href="#">
+    <p id="forgot"><span>Forgot Password?</span></p></a>
+    <a href="#"><input class="btn" type="button" name="" value="Login Now"></a>
+    <a href="#"><p id="register"><span>Register Now</span></p></a>
+    </form>
+    </div>
+    
+</body>
+</html>
